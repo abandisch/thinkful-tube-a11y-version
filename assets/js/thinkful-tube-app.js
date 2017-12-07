@@ -51,10 +51,10 @@ const pageView = {
                 // Make sure it's a video
                 if (item.id.kind === 'youtube#video') {
                     resultsHTML += `<li class="list-group-item">
-                                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" data-lity><img src="${item.snippet.thumbnails.medium.url}" alt="YouTube Video Image for ${item.snippet.title}" class="img-fluid"></a>
-                                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" data-lity><h4 class="text-info">${item.snippet.title}</h4></a>
+                                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" data-lity aria-hidden="true"><img src="${item.snippet.thumbnails.medium.url}" alt="YouTube Video Image for ${item.snippet.title}" class="img-fluid"></a>
+                                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" data-lity><h3 class="text-info">${item.snippet.title}</h3></a>
                                         <p class="card-text">${item.snippet.description}</p>
-                                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" class="btn btn-info" data-lity>View Video <i class="fa fa-television"></i></a>
+                                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" class="btn btn-info" data-lity aria-hidden="true">View Video <i class="fa fa-television"></i></a>
                                         <small><a class="channel-link text-info mt-1" href="https://youtube.com/channel/${item.snippet.channelId}" target="_blank">Go to ${item.snippet.channelTitle} YouTube Channel <i class="fa fa-external-link"></i></a></small>
                                     </li>`;
                 }
