@@ -37,15 +37,11 @@
                 </section>
 
                 <section id="section-results" class="mt-3">
-                    <div class="row">
-                        <div class="offset-md-2 col-md-8 col-sm-12">
-                            <div class="alert d-none js-alert-box" role="alert"><span>test</span></div>
-                        </div>
-                    </div>
+                    <p class="js-alert" hidden aria-hidden="true" aria-live="assertive"></p>
                     <ul class="list-group js-results"></ul>
                 </section>
 
-                <nav role="navigation" class="mt-3 mb-5 pagination-nav d-none">
+                <nav role="navigation" class="mt-3 mb-5 pagination-nav" hidden aria-hidden="true">
                     <ul class="pagination">
                         <li class="page-item mr-3"><button class="btn btn-danger js-btn-prev disabled"><i class="fa fa-angle-left"></i> Prev</button></li>
                         <li class="page-item"><button class="btn btn-danger js-btn-next disabled">Next <i class="fa fa-angle-right"></i></button></li>

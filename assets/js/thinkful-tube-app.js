@@ -59,10 +59,14 @@ const pageView = {
                                     </li>`;
                 }
             });
+            $('.js-alert')
+                .text(`Displaying approximately ${searchResults.pageInfo.totalResults} results`)
+                .prop('hidden', false).attr('aria-hidden', false);
             resultsContainer.html(resultsHTML);
             pageView.updatePaginationLink($('.js-btn-next'), searchResults.nextPageToken);
             pageView.updatePaginationLink($('.js-btn-prev'), searchResults.prevPageToken);
-            $('.pagination-nav').removeClass('d-none');
+            $('.pagination-nav')
+                .prop('hidden', false).attr('aria-hidden', false);
         } else {
             alert('Sorry, didn\'t get any results. Try another search!');
         }
