@@ -4,7 +4,6 @@ header, main {
 
 .list-group-item a {
     text-decoration: none;
-    outline: none;
 }
 .list-group-item a img {
     display: block;
