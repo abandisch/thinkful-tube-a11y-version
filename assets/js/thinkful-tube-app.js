@@ -77,11 +77,13 @@ const pageView = {
         if (pageToken) {
             linkElement
                 .data('page-token', pageToken)
-                .removeClass('disabled');
+                .removeClass('disabled')
+                .attr('aria-disabled', false);
         } else {
             linkElement
                 .removeAttr('page-token')
-                .addClass('disabled');
+                .addClass('disabled')
+                .attr('aria-disabled', true);
         }
     }
 };
