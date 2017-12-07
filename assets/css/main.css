@@ -38,6 +38,9 @@ button.disabled:hover {
     cursor: default;
 }
 
+.form-inline, .pagination {
+    justify-content: center;
+}
 /* Media Queries */
 @media screen and (min-width: 768px){
     .list-group-item {
