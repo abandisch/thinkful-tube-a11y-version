@@ -1,0 +1,85 @@
+header, main {
+    margin-top: 2em;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    outline: none;
+}
+.list-group-item a img {
+    display: block;
+    margin: 0 auto 15px;
+    max-height: 142px;
+}
+.list-group-item a h4, .list-group-item p {
+    margin: 0 0 10px;
+}
+.list-group-item h4 {
+    font-size: 20px;
+}
+.list-group-item p {
+    display: none;
+}
+.list-group-item .btn-info {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.list-group-item .channel-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+button.disabled:hover {
+    cursor: default;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px){
+    .list-group-item {
+        position: relative;
+    }
+    .list-group-item a img {
+        float: left;
+        margin-right: 10px;
+    }
+    .list-group-item .btn-info {
+        display: inline;
+        margin: 0;
+        width: auto;
+    }
+    .list-group-item .channel-link {
+        display: inline;
+        text-align: left;
+        padding: 0;
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .list-group-item .channel-link {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        display: inline;
+        text-align: right;
+        padding: 0;
+    }
+    .list-group-item p {
+        display: block;
+    }
+    .list-group-item h4 {
+        font-size: 24px;
+    }
+    .list-group-item .btn-info {
+        display: inline;
+        margin: 0;
+        width: auto;
+    }
+}
